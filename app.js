@@ -51,7 +51,7 @@ app.post('/', (req, res) => {
         })
     })
 
-    //request.write(jsonData)
+    request.write(jsonData)
     request.end()
 })
 
@@ -62,7 +62,3 @@ app.post('/failure', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
     console.log("Listening on port 3000")
 })
-
-//api key 6556730ef15214e2bf049987f52fa144-us21
-
-//list id e0c22e1d76
